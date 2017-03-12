@@ -45,11 +45,6 @@ This reads remanining variables from command prompt
 
 '''
 
-#print "Mutate to which residue (e.g. LYS)?"
-#prompt = '> '
-#aminoacidpre = raw_input(prompt)
-#aminoacid= aminoacidpre.upper()
-
 aminoacid="LYS" ############# FOR NO PROMPT
 
 if aminoacid=="GLY":
@@ -97,29 +92,7 @@ else:
     print ">>>>>> FATAL ERROR: You've not entered a valid amino acid code!!!"
     print "     "
     sys.exit()
-'''
-print "What starting residue number (i.e. 1 for from start)?"
-res_in_str = raw_input(prompt)
-if res_in_str == "":
-        print "You have not entered a value so we will assume you mean 1"
-        res_in=1
-else:
-        res_in = int(float(res_in_str))
 
-print "What ending residue number (e.g. 76)?"
-res_out_str = raw_input(prompt)
-if res_out_str == "":
-        total = 0
-        with open(prot_ext) as f:
-                for line in f:
-                        finded = line.find(" CA ")
-                        if finded != -1 and finded != 0:
-                               total += 1
-        print "You have not entered a value so we will assume you mean %s" % total
-        res_out=total
-else:
-        res_out = int(float(res_out_str))
-'''
 res_in=1354		############# FOR NO PROMPT
 res_out=1426		############# FOR NO PROMPT
 
