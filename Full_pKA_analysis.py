@@ -1,8 +1,5 @@
 #!/usr/bin/python
 #
-# Last update 24_02_2015
-# Combined from Robin Corey and Sophie Sillman
-#
 ###########################################################
 # A python script to mutate the residues in a pdb file to #
 # a specific residue one by one, then run propKa analysis #
